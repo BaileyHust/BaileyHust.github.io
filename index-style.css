@@ -8,4 +8,14 @@
 
 body{
     background-color: var(--french-gray);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: var(--caput-mortuum);
+    color: var(--celadon);
 }
