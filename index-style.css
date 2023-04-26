@@ -1,0 +1,11 @@
+.root{
+    --french-gray: #C3CAD5;
+    --caput-mortuum: #56282D;
+    --celadon: #A8D4AD;
+    --midnight-green: #023C40;
+    --wisteria: #C490D1;
+}
+
+body{
+    background-color: var(--french-gray);
+}
