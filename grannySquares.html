@@ -14,7 +14,7 @@
             <input type="submit" value="Submit">
         </form>
         <input type="button" onclick="generateSquare(3)" value="3 Row Square">
-        <table></table>
+        <table width="100px" height="100px"></table>
     </body>
 
     <footer>
@@ -32,6 +32,7 @@
                 const tr = tbl.insertRow();
                 for (let c=0; c<inputRows; c++){
                     const td = tr.insertCell();
+                    td.style.border = '1px solid black';
                 }
             }
         }
