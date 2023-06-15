@@ -21,11 +21,10 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-        document.body.onload = addElement;
-        
         function generateSquare(inputRows){
             console.log("Number of Rows:" + inputRows);
-            const tbl = document.createElement("table");
+            const tbl = document.querySelector("table");
+            table.innerHTML = "";
             tbl.style.width = '100px';
             tbl.style.heigth = '100px';
             tbl.style.border = '1px solid black';
