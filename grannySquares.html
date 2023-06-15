@@ -14,7 +14,6 @@
             <input type="submit" value="Submit">
         </form>
         <input type="button" onclick="generateSquare(3)" value="3 Row Square">
-        <table width="100px" height="100px"></table>
     </body>
 
     <footer>
@@ -24,7 +23,7 @@
     <script>
         function generateSquare(inputRows){
             console.log("Number of Rows:" + inputRows);
-            const tbl = document.querySelector("table");
+            const tbl = document.createElement("table");
             tbl.style.width = '100px';
             tbl.style.heigth = '100px';
             tbl.style.border = '1px solid black';
