@@ -7,14 +7,14 @@
         <meta name='keywords' content="HTML, CSS, JavaScript, Crochet">
     </head>
 
-    <body>
+    <body style="text-align: center;">
         <form onsubmit="return generateSquare(this)">
             <label for="numRows">Number of Rows:</label>
             <input type="number" max=50 min=1 id="numRows" name="numRows">
             <input type="submit" value="Submit">
         </form>
         <input type="button" onclick="generateSquare(3)" value="3 Row Square">
-        <table></table>
+        <table style="border-collapse: collapse;"></table>
     </body>
 
     <footer>
@@ -26,8 +26,8 @@
             console.log("Number of Rows:" + inputRows);
             const tbl = document.querySelector("table");
             tbl.innerHTML = "";
-            tbl.style.width = '1000px';
-            tbl.style.height = '1000px';
+            tbl.style.width = '500px';
+            tbl.style.height = '500px';
             tbl.style.border = '1px solid black';
 
             for (let r=0; r<inputRows; r++){
